@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NaturaSPA</title>
+    
+    <link rel="icon" type="image/x-icon" href="beauty.png">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    
+    </head>
+    <body>
+        <center><H1 id="h">NATURA BEAUTY SPA</H1></center>
+    <div class="hef">
+        <div class="hefi"><a href="#" class="lin">Home</a></div>
+        <div class="hefi"><a href="#" class="lin">Product</a></div>
+        <div class="hefi"><a href="#" class="lin">Orders</a></div>
+        <div class="hefi"><a href="#" class="lin">Cart</a></div>
+        <div class="hefi"><a href="#" class="lin">About</a></div>
+        <div class="login">
+            <button onclick="openm()" class="b">LOGIN</button>
+    </div>
+        </div>
+        <div id="mmodal" class="modal"><div class="modalc">
+            <span class="close" onclick="closem()">&times</span>
+            <form>
+            <label for="username">USERNAME:</label>
+            <input type="text" id="user" name="username"><br><hr>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Submit" id="su"></form><br>
+            </div></div>
+
+        <div class="conti">
+        <div class="it"><img src="hair.avif" class="im">
+            <h1>Hair Spa</h1>
+            <p> PRICING:$10.99</p>
+            <button class="bu">ADD TO CART</button></div>
+        <div class="it"><img src="massage.avif" class="im">
+            <h1>Oil Massage</h1>
+            <p> PRICING:$15.79</p>
+            <button class="bu">ADD TO CART</button></div>
+            <div class="it"><img src="wash.jpg" class="im">
+            <h1>Hair Wash</h1>
+            <p> PRICING:$7.93</p>
+            <button class="bu">ADD TO CART</button></div>
+            <div class="it"><img src="facial.jpg" class="im">
+            <h1>Face Treatment</h1>
+            <p> PRICING:$40.03</p>
+            <button class="bu">ADD TO CART</button></div>
+            <div class="it"><img src="headmassage.avif" class="im">
+            <h1>Head Massage</h1>
+            <p> PRICING:$10.13</p>
+            <button class="bu">ADD TO CART</button></div>
+        </div>
+        <center><h1 id='h'>Our Services</h1></center>
+        <div class="container3">
+        <div class="backf">
+            <div class="inner">
+                <div class="front">
+                    <img src="hair.avif" id="hair1">
+                </div>
+                <div class="back">
+                    <h1> Hair Spa</h1><br>
+                    <ul type="disk" class="po">
+                        <li>Customized Hair Treatments</li>
+                        <li>Deep Moisturizing Rituals</li>
+                        <li>Nutrient-Enriched Treatments</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="backf">
+            <div class="inner">
+                <div class="front">
+                    <img src="massage.avif" id="hair1">
+                </div>
+                <div class="back">
+                    <h1> Oil Massage</h1><br>
+                    <ul type="disk" class="po">
+                        <li>Tailored Oil Blends</li>
+                        <li>Stress Relief and Relaxation</li>
+                        <li>Muscle Rejuvenation and Pain Relief</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="backf">
+            <div class="inner">
+                <div class="front">
+                    <img src="wash.jpg" id="hair1">
+                </div>
+                <div class="back">
+                    <h1> Hair Wash</h1><br>
+                    <ul type="disk" class="po">
+                        <li>Personalized Cleansing Rituals</li>
+                        <li>Scalp Detoxification and Massage</li>
+                        <li>Hydrating and Nourishing Formulas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="backf">
+            <div class="inner">
+                <div class="front">
+                    <img src="facial.jpg" id="hair1">
+                </div>
+                <div class="back">
+                    <h1> Face Treatment</h1><br>
+                    <ul type="disk" class="po">
+                        <li>Personalized Skin Analysis</li>
+                        <li>Deep Cleansing and Exfoliation</li>
+                        <li>Customized Masking and Nourishment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="backf">
+            <div class="inner">
+                <div class="front">
+                    <img src="headmassage.avif" id="hair1">
+                </div>
+                <div class="back">
+                    <h1> Head Massage</h1><br>
+                    <ul type="disk" class="po">
+                        <li>Personalized Consultation</li>
+                        <li>Gentle Relaxation Techniques</li>
+                        <li>Aromatherapy-infused Oils</li>
+                    </ul>
+                </div>
+            </div>
+        </div></div>
+            <footer id="foot">
+            Copyrights &copy; Natura Spa
+            </footer>
+            <script>
+                function openm(){
+                    var flipCards = document.querySelectorAll('.container3 .backf');
+        flipCards.forEach(function(card) {
+            card.style.display = 'none';
+        });
+                    document.getElementById("mmodal").style.display="block";
+                }
+                function closem(){
+                    var flipCards = document.querySelectorAll('.container3 .backf');
+        flipCards.forEach(function(card) {
+            card.style.display = 'block';
+        });
+ document.getElementById("mmodal").style.display="none";
+                }
+        </script>
+                
+    </body>
+</html>
+       
